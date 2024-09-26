@@ -41,6 +41,7 @@ public class strobogrammatic {
         else{
             System.out.println("False");
         }
+        sc.close();
     }
       
 }

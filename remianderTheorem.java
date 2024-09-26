@@ -28,5 +28,6 @@ public class remianderTheorem {
             m[i]=sc.nextInt();
         }
         System.out.println(Min(m,a,size));
+        sc.close();
     }
 }
