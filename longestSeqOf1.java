@@ -19,8 +19,9 @@ public class longestSeqOf1 {
         return max;
     }
     public static void main(String args[]){
-        int arr[]={1,1,1,0,0,0,1,1,1,1};
-        int k=2;
+        // int arr[]={1,1,1,0,0,0,1,1,1,1};
+        int arr[]={1,1,1,1,0,0,1,1};
+        int k=1;
         System.out.println(func(arr,k));
     }
 }

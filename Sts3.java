@@ -15,5 +15,6 @@ class Sts3 {
     else{
         System.out.println("Not a palindrome");
     }
+    sc.close();
     }
 }

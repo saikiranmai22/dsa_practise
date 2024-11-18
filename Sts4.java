@@ -5,6 +5,7 @@ class Sts4 {
         int a= sc.nextInt();
         int b= sc.nextInt();
         System.out.println(answer(a,b));
+        sc.close();
     }
     static int answer(int a, int b){
         if(a==0)

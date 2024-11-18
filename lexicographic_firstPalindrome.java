@@ -1,5 +1,6 @@
 import java.util.*;
 public class lexicographic_firstPalindrome {
+    
     public static void main (String args[]){
         String input="aabcc";
         int l= input.length();
@@ -18,6 +19,7 @@ public class lexicographic_firstPalindrome {
         for(String y:palindromes){
             System.out.println(y);
         }
+        
     }
 
     public static void permute(char arr1[], int l, Set<String> permutations){
@@ -38,6 +40,7 @@ public class lexicographic_firstPalindrome {
 
             }
         }
+        
     }
 
     public static boolean isPalindrome(String str){
@@ -51,5 +54,6 @@ public class lexicographic_firstPalindrome {
             end--;
         }
         return true;
+        
     }
 }

@@ -25,5 +25,6 @@ public class simpleSieve {
                 System.out.println(i);
             }
         }
+        sc.close();
     }
 }

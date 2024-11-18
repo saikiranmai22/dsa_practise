@@ -1,5 +1,3 @@
-import java.util.*;
-import java.io.*;
 class Sts1{
 static int findMinX(int num[],int rem[], int k)
     {
