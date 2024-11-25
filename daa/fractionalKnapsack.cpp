@@ -2,12 +2,10 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
 struct Item{
     int value, weight;
     Item(int v, int w): value(v),weight(w){}
 };
-
 bool compare(Item a, Item b){
     double r1=(double)a.value/a.weight;
     double r2=(double)b.value/b.weight;

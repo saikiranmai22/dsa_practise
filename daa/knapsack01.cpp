@@ -28,10 +28,8 @@ int knapsack(int W, vector<int> &wt, vector<int> &val, int n) {
 int main() {
     int n, W;
 
-    // Input the number of items and knapsack capacity
     cout << "Enter the number of items: ";
     cin >> n;
-
     cout << "Enter the capacity of the knapsack: ";
     cin >> W;
 

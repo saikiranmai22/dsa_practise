@@ -62,8 +62,6 @@ void KMPSearch(string pattern, string text) {
 int main() {
     string text = "ABABDABACDABABCABAB";
     string pattern = "ABABCABAB";
-    
     KMPSearch(pattern, text);
-    
     return 0;
 }
