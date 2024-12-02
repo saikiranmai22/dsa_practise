@@ -8,6 +8,7 @@ int main() {
     {INF, INF,0,1},
     {INF,INF,INF,0}};
     int n= graph.size();
+    // cout<<n<<endl;
     vector<vector<int>> dist= graph;
     
     for(int k=0;k<n;k++){
@@ -19,7 +20,6 @@ int main() {
             }
         }
     }
-    
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(dist[i][j]==INF){
@@ -30,7 +30,6 @@ int main() {
             }
         }
         cout<<"\n";
-    }
-    
+    } 
     return 0;
 }

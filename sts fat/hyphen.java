@@ -1,3 +1,4 @@
+import java.util.*;
 public class hyphen {
     static void movSpaceInFront(char str[]){
         int i=str.length-1;
@@ -11,7 +12,9 @@ public class hyphen {
         }
     }
     public static void main(String[] args){
-        char str[]= "code -4-lyf".toCharArray();
+        Scanner sc = new Scanner(System.in);
+        String input= sc.nextLine(); //code -4-lyf
+        char str[]= input.toCharArray();
         movSpaceInFront(str);
         System.out.println(String.valueOf(str));
     }

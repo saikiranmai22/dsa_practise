@@ -28,7 +28,6 @@ public class binPalin {
 
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        // int x=sc.nextInt();
         // int x=sc.nextInt(); // find the n th binary palindrime 
         int x=9;
         int n=finalfunc(x);

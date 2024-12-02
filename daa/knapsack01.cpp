@@ -4,8 +4,7 @@ using namespace std;
 
 // Function to solve 0/1 Knapsack using dynamic programming
 int knapsack(int W, vector<int> &wt, vector<int> &val, int n) {
-    // Create a 2D dp array, where dp[i][j] represents the maximum value
-    // for a capacity j with the first i items
+    // Create a 2D dp array, where dp[i][j] represents the maximum value for a capacity j with the first i items
     vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
     
     // Build dp array

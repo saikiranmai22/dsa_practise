@@ -1,0 +1,70 @@
+def ford_fulkerson(graph, source, sink):
+    max_flow = 0
+    while there exists a path from source to sink in residual graph:
+        # Find the minimum capacity in the path
+        path_flow = min(edge capacity along the path)
+        # Update residual capacities
+        for edge in path:
+            reduce capacity of edge by path_flow
+            increase capacity of reverse edge by path_flow
+        max_flow += path_flow
+    return max_flow
+
+
+
+def rabin_karp(text, pattern):
+    n, m = length of text, length of pattern
+    pattern_hash = hash(pattern)
+    current_hash = hash(text[0:m]) # Hash of the first window
+    for i in range(n - m + 1): # Slide over text
+        if current_hash == pattern_hash:
+            # Verify match to handle hash collision
+            if text[i:i + m] == pattern:
+                return i  # Match found
+        # Update hash for next window (rolling hash)
+        if i < n - m:
+            current_hash = update_hash(current_hash, text[i], text[i + m])
+    return -1  # No match found
+
+
+
+Input: Graph G with V vertices, m colors
+Output: Whether the graph can be colored using m colors
+Function isSafe(vertex, color, colors[]):
+    For each neighbor of vertex in G:
+        If colors[neighbor] == color:
+            Return False
+    Return True
+Function graphColoring(vertex, colors[], m):
+    If vertex == V:   // All vertices are colored
+        Return True
+    
+    For color from 1 to m:  // Try all colors
+        If isSafe(vertex, color, colors[]):
+            colors[vertex] = color
+            If graphColoring(vertex + 1, colors[], m):
+                Return True
+            colors[vertex] = 0  // Backtrack
+    
+    Return False
+Main:
+    colors[] = [0] * V  // Initialize all vertices with no color
+    If graphColoring(0, colors[], m):
+        Print "Solution exists:", colors[]
+    Else:
+        Print "No solution"
+
+
+
+Input: Array of activities with start and finish times [(s1, f1), (s2, f2), ..., (sn, fn)]
+Output: List of selected activities
+1. Sort activities by their finish times in ascending order.
+2. Initialize result = [ ] (to store selected activities)
+3. Select the first activity:
+   a. Add the first activity to result.
+   b. Set last_finish = finish time of the first activity.
+4. For each activity i from 2 to n:
+   a. If start time of activity i ≥ last_finish:
+      i. Add activity i to result.
+      ii. Update last_finish = finish time of activity i.
+5. Return result (list of selected activities)

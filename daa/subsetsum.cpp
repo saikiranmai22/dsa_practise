@@ -33,7 +33,6 @@ using namespace std;
     //     cin>>x;
     //     arr.push_back(x);
     // }
-
     if(subsetsum(arr, target, n)){
         cout<<"exists";
     }

@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 public class strobogrammatic {
-
+// if a given number looks the same after 180 degree rotation
     static boolean Stro(String num){
         Map<Character, Character> map= new HashMap<>();
         map.put('0','0');
@@ -18,18 +18,6 @@ public class strobogrammatic {
             start++;
             end--;
         }
-        // int n=num.length();
-        // for (int i=0,j=(n-1);i<=j;i++,j--){
-        //     char left=num.charAt(i);
-        //     char right=num.charAt(j);
-        //     char mapping= map.getOrDefault(left, '-');
-        //     if (mapping =='-'){
-        //         return false;
-        //     }
-        //     if(mapping!=right){
-        //         return false;
-        //     }
-        // }
         return true;
     }
     public static void main(String args[]){
@@ -45,3 +33,4 @@ public class strobogrammatic {
     }
       
 }
+ 

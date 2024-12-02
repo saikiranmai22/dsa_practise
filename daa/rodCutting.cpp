@@ -37,7 +37,7 @@ int rodCuttingBottomUp(int n, vector<int>& price) {
 
 int main() {
     // Example: Prices for each length of the rod
-    vector<int> price = {0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30}; // 0th index is unused
+    vector<int> price = {0, 1, 5, 8, 9, 10, 17, 17, 20}; // 0th index is unused
     int n = 8; // Length of the rod
 
     // Top-Down Approach
